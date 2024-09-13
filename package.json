@@ -1,0 +1,39 @@
+{
+  "name": "universidadorm",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "build:css": "postcss public/css/tailwind.css -o public/css/app.css --watch",
+    "start": "node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^22.5.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "glob": "^11.0.0",
+    "inflight": "^1.0.6",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.11.0",
+    "postcss": "^8.4.45",
+    "pug": "^3.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "reflect-metadata": "^0.2.2",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^3.4.10",
+    "typeorm": "^0.3.20"
+  }
+}
